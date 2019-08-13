@@ -105,7 +105,7 @@ img{
 #cualidades,
 #capacidades{
 	padding-left: 1em;
-	background-color: #aaa;
+	background-color: #ccc;
 }
 
 #formacacadem li,
@@ -134,3 +134,38 @@ img{
 	font-weight: bold;
 }
 
+
+/* Media Query */
+@media (max-width: 600px){
+	body {
+		padding: .3em;
+		font-size: .8em;
+	}
+	#formacionacademica,
+	#experiencialaboral,
+	#cualidcapac{
+		margin-left: 10px;
+		font-size: 1em;
+	}	
+	#formacacadem,
+	#formaccompl,
+	#idiomas,
+	#administ,
+	#jardineria,
+	#otros,
+	#cualidades,
+	#capacidades{
+		padding-left: .2em;
+	}
+
+	#formacacadem li,
+	#formaccompl li,
+	#idiomas li,
+	#administ li,
+	#jardineria li, 
+	#otros li,
+	#cualidades li,
+	#capacidades li{
+		padding-left: .2em;
+	}
+}
