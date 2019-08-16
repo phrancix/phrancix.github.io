@@ -14,11 +14,11 @@ body {
 }
 
 
-
+/* Datos Personales */
 .datospersonales,
 .footer{
-	background-color: #ddd;
-	padding: 2em;
+	background-color: #ccc;
+	padding: 1em;
 	box-shadow: 2px 2px 4px black;
 }
 .datospersonales{
@@ -27,41 +27,44 @@ body {
 .footer{
 	text-align: center;
 	margin-top: 25px;
-}
+}s
 #personal i{
 	margin-bottom: 25px;
 }
+#presentacion{
+	background-color: rgba(150, 150, 150, .5);
+	font-style: oblique;
+	text-align: justify;
+	margin: 15px 25px;
+	padding: 1em;
+	box-shadow: 1px 0px 2px black;
+	border-radius: 15px;
+}
 
 #nom{
-	background-color: rgba(150, 150, 150, .1);
 	color: #069;
 	font-size: 2em;
 	font-family: 'Merienda';
 	text-align: center;
-	text-weight: bold;
-	border-radius: 25px;
-	padding: .3em;
-	text-shadow: 1px 0px 4px black;
+	font-weight: bold;
+
 }
 #direccion , 
 #contacto {
 	display: inline-block;
 	text-align: center;
-	font-weight: bold;
-	background-color: rgba(150, 150, 150, .1);
-	border-radius:25px;
-	padding: .5em;
-	width: 400px;
+}
+#foto{
+	text-align: center;
 }
 
-img{
-	text-align: center;
+#foto img{
 	border-radius: 30%;
 	box-shadow: 3px 2px 18px black;
 }
 
 .descarga{
-	background-color: rgba(150, 150, 150, .1);
+	background-color: rgba(150, 150, 150, .5);
 	box-shadow: 1px 0px 2px black;
 	border-radius: 15px;
 	width: 155px;
@@ -69,6 +72,13 @@ img{
 	padding: .4em;
 	font-size: .8em;
 	text-align: center;
+}
+.descarga a{
+	color: azure;
+}
+.descarga a:hover{
+	color: #222;
+	text-decoration: underline overline;
 }
 
 .fas{
@@ -80,7 +90,7 @@ img{
 	background-color: #888;
 	border-radius: 10px;
 	box-shadow: 1px 2px 6px black;
-	color: #ccc;
+	color: azure;
 	font-weight: bold;
 	margin: .3em;
 }
@@ -97,6 +107,7 @@ img{
 }
 
 #formacacadem,
+#formaclaboral,
 #formaccompl,
 #idiomas,
 #administ,
@@ -105,10 +116,13 @@ img{
 #cualidades,
 #capacidades{
 	padding-left: 1em;
+	padding-right: 1em;
 	background-color: #ccc;
+	text-align: justify;
 }
 
 #formacacadem li,
+#formaclaboral li,
 #formaccompl li,
 #idiomas li,
 #administ li,
@@ -118,6 +132,7 @@ img{
 #capacidades li{
 	list-style: none;
 	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .p-1{
@@ -135,6 +150,13 @@ img{
 }
 
 
+#arriba{
+	position: fixed;
+	right: 15px;
+	bottom: 20px;
+}
+
+
 /* Media Query */
 @media (max-width: 600px){
 	body {
@@ -148,6 +170,7 @@ img{
 		font-size: 1em;
 	}	
 	#formacacadem,
+	#formaclaboral,
 	#formaccompl,
 	#idiomas,
 	#administ,
@@ -156,9 +179,12 @@ img{
 	#cualidades,
 	#capacidades{
 		padding-left: .2em;
+		padding-right: .2em;
+		text-align: justify;
 	}
 
 	#formacacadem li,
+	#formaclaboral li,
 	#formaccompl li,
 	#idiomas li,
 	#administ li,
@@ -167,5 +193,12 @@ img{
 	#cualidades li,
 	#capacidades li{
 		padding-left: .2em;
+		padding-right: .2em;
 	}
+	#arriba{
+		position: fixed;
+		right: -20px;
+		bottom: 20px;
+	}
+
 }
