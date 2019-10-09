@@ -157,7 +157,7 @@ body {
 }
 
 
-/* Media Query */
+/* ---------------------------------------------------------------- Media Query */
 @media (max-width: 600px){
 	body {
 		padding: .3em;
@@ -200,5 +200,9 @@ body {
 		right: -20px;
 		bottom: 20px;
 	}
+	.descarga{
+	margin: 1.2em 0 0 4.5em;
+;
+}
 
 }
